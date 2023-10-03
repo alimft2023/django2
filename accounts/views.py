@@ -19,7 +19,7 @@ def addexperience(request):
 
 
 def createprofile(request):
-    return render(request, "accounts/createprofile.html", {})
+    return render(request, "accounts/create-profile.html", {})
 
 
 def dashboard(request):
