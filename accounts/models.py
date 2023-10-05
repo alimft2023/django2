@@ -13,10 +13,16 @@ class UserProfile(models.Model):
 class Education(models.Model):
     school = models.CharField(max_length=100)
     degree = models.CharField(max_length=100)
-    field = models.models.CharField(max_length=100)
+    field = models.CharField(max_length=100)
     start = models.DateTimeField()
     end = models.DateTimeField(null=True)
-    description = models.text()
+    description = models.TextField()
+
 
 class Experience(models.Model):
-    
+    title = models.CharField(max_length=100)
+    company = models.CharField(max_length=100)
+    location = models.CharField(max_length=100)
+    start = models.DateTimeField()
+    end = models.DateTimeField(null=True)
+    description = models.TextField()
