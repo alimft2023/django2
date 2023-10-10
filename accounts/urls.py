@@ -8,6 +8,6 @@ urlpatterns = [
     path("addexperience/", views.addexperience, name='addexperience'),
     path("createprofile/", views.createprofile, name='createprofile'),
     path("dashboard/", views.dashboard, name='dashboard'),
-    path("profile/", views.profile, name='profile'),
+    path("profile/<int:pk>", views.profile, name='profile'),
     path("profiles/", views.profiles, name='profiles'),
 ]
